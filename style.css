@@ -11,6 +11,7 @@
     outline:none;
     scroll-behavior:smooth;
     font-family: 'Nunito', sans-serif;
+    transition: all 0.3s ease;
 }
 
 html{
@@ -29,6 +30,11 @@ body{
     font-size: 2rem;
     cursor: pointer;
     color:#85aaba;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+    transform: scale(1.1);
 }
 
 section{
@@ -39,7 +45,6 @@ section{
 h1, p {
     transition: color 0.3s ease;
 }
-
 
 .head{
     position:fixed;
@@ -64,9 +69,12 @@ h1, p {
     cursor: pointer;
     background: transparent;
     animation: slideRight 1s ease forwards;
+    transition: transform 0.3s ease; 
 }
+
 .logo:hover{
     color:#49836e;
+    transform: scale(1.1);
 }
 
 .navbar a{
@@ -77,6 +85,7 @@ h1, p {
     gap:10px;
     background: transparent;
     animation: slideTop 0.5s ease forwards;
+    transition: transform 0.3s ease;
 }
 
 @keyframes slideRight{
@@ -102,6 +111,7 @@ h1, p {
 }
 .navbar a:hover{
     color:#49836e;
+    transform: scale(1.1); 
 }
 
 #menu-icon{
@@ -131,6 +141,7 @@ h1, p {
     object-fit: cover; 
     z-index: -1; 
     will-change: transform;
+    transition: transform 2s ease-in-out;
 }
 
 .home-content{
@@ -142,14 +153,14 @@ h1, p {
     max-width: 600px;
 }
 
-.home-content h3{
+.home-content h3, .home-content h1{
     font-size: 3.3rem;
     font-weight: 600;
     animation: slideBottom 1s ease forwards;
     animation:0.7s
 }
 
-@keyframes slideBottom{
+@keyframes slideUp{
     0%{
         transform: translateY(-100px);
         opacity:0;
@@ -176,21 +187,21 @@ span{
 
 .home-img {
     width: 30vw;
-    height: 30vw; /* Ensure the container is square */
-    overflow: hidden; /* Hide the overflow */
-    border-radius: 50%; /* Create the circular shape */
-    display: flex; /* Flexbox to center the image if needed */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    height: 30vw; 
+    overflow: hidden; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 .home-img img {
-    width: 100%; /* Ensure image takes up the full width */
-    height: 100%; /* Ensure image takes up the full height */
-    object-fit: cover; /* Maintain aspect ratio and cover the area */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     animation: floatImage 4s ease-in-out infinite;
+    transition: transform 0.3s ease; 
 }
-
 
 @keyframes floatImage{
     0%{
@@ -220,13 +231,14 @@ span{
     font-size: 2rem;
     color:#59B2F4;
     margin: 3rem 1.5rem 3rem 0;
-    transition: .5s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .media a:hover{
     background: #59B2F4;
     color:#262B40;
     box-shadow: 0 0 1rem #59B2F4;
+    transform: scale(1.1);
 }
 
 .btn{
@@ -239,14 +251,13 @@ span{
     color:#191f36;
     letter-spacing: 0.1rem;
     font-weight: 600;
-    transition: 0.5s ease;
+    transition: all 0.3s ease;
 }
 .btn:hover{
     box-shadow: none;
     color:beige;
+    transform: scale(1.05); 
 }
-
-/* Next div */
 
 .city{
     display: flex;
@@ -267,6 +278,12 @@ span{
     max-width: 500px;
     transform: translateX(0%);
     animation: slideInLeft 1s ease-out , opacity ease-out infinite;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.city-img img:hover {
+    transform: scale(1.05); 
+    opacity: 0.9; 
 }
 
 .city-content{
@@ -295,7 +312,7 @@ span{
         opacity: 1;
     }
 }
-
+/* --------------- */
 .heading{
     text-align: center;
     font-size: 4.5rem;
