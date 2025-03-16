@@ -1,5 +1,3 @@
-
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
 *{
@@ -393,12 +391,26 @@ span{
     padding: 10rem 2rem 4rem 2rem;
     text-align: center;
     background-color: #2f585f;
+    animation: fadeInUp 1s ease-out;
+}
+
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .services .heading {
     font-size: 4rem;
     font-weight: 600;
     margin-bottom: 5rem;
+    animation: fadeIn 1s ease-out;
 }
 
 .services .heading span {
@@ -618,8 +630,6 @@ span {
     color: #262B40;
 }
 
-/* Next div */
-
 .contact h2{
     margin-bottom: 3rem;
 }
@@ -680,6 +690,11 @@ span {
     bottom: 2rem; 
     right: 2rem; 
     z-index: 1000; 
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3); 
+}
+
+.footer-iconTop a {
+    display: block;
 }
 
 .footer-iconTop a:hover {
@@ -692,6 +707,7 @@ span {
     color: #fff; 
     transition: color 0.3s ease; 
 }
+
 .footer-iconTop a:hover i {
     color: #e4bb14; 
 }
