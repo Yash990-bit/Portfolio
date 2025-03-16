@@ -312,25 +312,50 @@ span{
         opacity: 1;
     }
 }
-/* --------------- */
+
 .heading{
     text-align: center;
     font-size: 4.5rem;
     margin-bottom: 2rem;
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .city-content h2{
     text-align: left;
     line-height: 1.2;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.city-content h2:hover {
+    color: #59B2F4; 
+    transform: translateX(5px); 
 }
 
 .city-content h3{
     font-size: 2.6rem;
 }
 
+.city-content h3:hover {
+    color: #59B2F4; 
+}
+
 .city-content p{
     font-size: 1.6rem;
     margin: 2rem 0 3rem;
+    transition: color 0.3s ease;
+}
+
+.city-content p:hover {
+    color: #59B2F4;
 }
 
 .short-description {
@@ -348,6 +373,12 @@ span{
     background-color: #2eb9d1;
     border-radius: 10px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #1abc9c;
+    transform: scale(1.05); 
 }
 
 .show-full .full-description p{
@@ -357,9 +388,6 @@ span{
 .show-full .btn {
     background-color: #1abc9c; 
 }
-
-
-/* Next div */
 
 .services {
     padding: 10rem 2rem 4rem 2rem;
@@ -492,8 +520,6 @@ span{
 .popup-overlay .close-btn:hover {
     background-color: #3d8dbc;
 }
-
-/* Next div */
 
 .portfolio{
     background-color: #191f36;
