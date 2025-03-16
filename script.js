@@ -5,12 +5,8 @@ document.getElementById("toggle-content").addEventListener("click", function(e) 
     const btnText = document.getElementById("toggle-content");
 
     cityContent.classList.toggle("show-full");
-
-    if (cityContent.classList.contains("show-full")) {
-        btnText.textContent = "Read less";
-    } else {
-        btnText.textContent = "Read more";
-    }
+    btnText.textContent = cityContent.classList.contains("show-full") ? "Read less" : "Read more";
+    
 });
 
 const readMoreButtons = document.querySelectorAll('.services-box .btn');
@@ -40,7 +36,6 @@ closeButtons.forEach(button => {
     });
 });
 
-
 const form = document.getElementById('contact-form');
 const successMessage = document.getElementById('success-message');
 
@@ -63,14 +58,12 @@ form.addEventListener('submit', function (e) {
     }, 5000);
 });
 
-
 const menuIcon = document.getElementById('menu-icon');
 const navbar = document.querySelector('.navbar');
 
 menuIcon.addEventListener('click', () => {
     navbar.classList.toggle('active');
 });
-
 
 const links = document.querySelectorAll('.navbar a');
 
