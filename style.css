@@ -772,6 +772,9 @@ span {
     .portfolio-container{
         grid-template-columns: 1fr,1fr;
     }
+    .popup-container , .portfolio-box {
+        height: 300px; 
+    }
 }
 
 @media screen and (max-width:480px){
@@ -793,6 +796,13 @@ span {
     .city-img img{
         width:100%;
     }   
+    .portfolio-container , .portfolio-box{
+        height: 200px;
+    }
+    .home-img img{
+        width:80%;
+        height: auto; 
+    }
 }
 
 
