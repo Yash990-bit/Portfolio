@@ -792,6 +792,7 @@ span {
     .home-content h1{
         font-size: 2.5rem;
         text-align: center;
+        margin-bottom: 1rem;
     }
     .home-content p{
         font-size: 1.2rem;
@@ -810,11 +811,11 @@ span {
         width:100%;
     }
     .home-img {
-        width: 70vw; /* Further increase the image size for smaller screens */
+        width: 70vw; 
         height: 70vw;
     }
     .home-content {
-        padding: 0 15px; /* Reduce padding to make the content fit better */
+        padding: 0 15px; 
     }   
 }
 
