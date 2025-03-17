@@ -746,9 +746,22 @@ span {
     .home-content{
         align-items: center;
         text-align: center;
+        padding: 0 20px; 
     }
     .home-content h1{
         font-size: 3rem;
+        text-align: center;
+    }
+    .home-img {
+        width: 50vw; 
+        height: 50vw;
+        margin-top: 3rem;
+    }
+    .home-img img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%; 
     }
     .home-content p{
         font-size: 1.4rem;
@@ -765,6 +778,7 @@ span {
         flex-direction: column;
         align-items: center;
         gap:5rem;
+        text-align: center;
     }
     .city-img img{
         width: 80%;
@@ -772,17 +786,16 @@ span {
     .portfolio-container{
         grid-template-columns: 1fr,1fr;
     }
-    .popup-container , .portfolio-box {
-        height: 300px; 
-    }
 }
 
 @media screen and (max-width:480px){
     .home-content h1{
         font-size: 2.5rem;
+        text-align: center;
     }
     .home-content p{
         font-size: 1.2rem;
+        text-align: center;
     } 
     .services-container{
         grid-template-columns: 1fr;
@@ -795,14 +808,14 @@ span {
     }
     .city-img img{
         width:100%;
+    }
+    .home-img {
+        width: 70vw; /* Further increase the image size for smaller screens */
+        height: 70vw;
+    }
+    .home-content {
+        padding: 0 15px; /* Reduce padding to make the content fit better */
     }   
-    .portfolio-container , .portfolio-box{
-        height: 200px;
-    }
-    .home-img img{
-        width:80%;
-        height: auto; 
-    }
 }
 
 
