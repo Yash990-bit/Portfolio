@@ -201,6 +201,17 @@ span{
     transition: transform 0.3s ease; 
 }
 
+.home p {
+    font-size: 16px;  
+    transition: all 0.3s ease; 
+}
+
+.home p:hover {
+    font-size: 20px;  
+    transform: translateY(-10px);
+    color:seashell;
+}
+
 @keyframes floatImage{
     0%{
         transform: translateY(0);
