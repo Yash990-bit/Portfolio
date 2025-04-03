@@ -1,3 +1,40 @@
+let roleElement = document.getElementById('role');
+let roles = ['Frontend Developer', 'Backend Developer'];
+let index = 0;
+let currentText = '';
+let isDeleting = false;
+let speed = 150; 
+let deleteSpeed = 100; 
+let loopDelay = 1000; 
+
+function typeWriter() {
+    let targetText = roles[index];
+
+    if (!isDeleting) {
+        currentText = targetText.substring(0, currentText.length + 1);
+        roleElement.textContent = currentText;
+
+        if (currentText === targetText) {
+            isDeleting = true;
+            setTimeout(typeWriter, loopDelay);
+        } else {
+            setTimeout(typeWriter, speed); 
+        }
+    } else {
+        currentText = currentText.substring(0, currentText.length - 1);
+        roleElement.textContent = currentText;
+
+        if (currentText === '') {
+            isDeleting = false;
+            index = (index + 1) % roles.length; 
+            setTimeout(typeWriter, loopDelay); 
+        } else {
+            setTimeout(typeWriter, deleteSpeed); 
+        }
+    }
+}
+typeWriter();
+
 document.getElementById("toggle-content").addEventListener("click", function(e) {
     e.preventDefault(); 
 
