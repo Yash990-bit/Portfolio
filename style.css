@@ -361,7 +361,18 @@ span{
 }
 
 .full-description p{
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease, max-height 0.5s ease; 
+}
+
+.city-content .full-description {
     display: none; 
+}
+
+.city-content.show-full .full-description {
+    display: block;
 }
 
 .btn {
@@ -381,6 +392,7 @@ span{
 
 .show-full .full-description p{
     display: block; 
+
 }
 
 .show-full .btn {
