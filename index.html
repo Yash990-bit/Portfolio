@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+</head>
+<body>
+    <header class="head">
+        <a href="#" class="logo">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="act">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Skills</a>
+            <a href="#portfolio">Project</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <video autoplay muted loop class="background-video">
+            <source src="Videos/videos6.mp4" type="video/mp4">
+        </video>
+        <div class="home-content">
+            <h3>Hi, Myself</h3>
+            <h1>Yash Raghubanshi</h1>
+            <h3>And I'm a <span>Frontend Developer</span></h3>
+            <p>I am a first year CS and AI student dedicated  Frontend Developer with a deep passion for building visually appealing, responsive, and user-friendly websites and applications.</p>
+            <div class="media">
+                <a href="https://www.instagram.com/whyash7/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/yash-raghubanshi-ba9ba630b/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:yash.ragubasnhi2024@nst.rishihoodedu.in.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://github.com/Yash990-bit"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <a href="https://drive.google.com/file/d/1_Kw5eZ4n_3orHGelsbfHGSa-oKKXkMZ1/view?usp=sharing" class="btn">MoreAbout Me</a>
+        </div>
+
+        <div class="home-img">
+            <img src="Images/images1.jpeg" alt="">
+        </div>
+    </section>
+
+    <section class="city" id="about">
+        <div class="city-img">
+            <img src="Images/images2.jpeg" alt="">
+        </div>
+
+        <div class="city-content">
+            <h2 class="heading">ABOUT <span>Me</span></h2>
+            <h3>Full Stack Developer</h3>
+            <p class="short-description">In addition to my technical skills, I believe in continuous learning and improving. I stay up to date with industry trends and enjoy experimenting with new tools and technologies.</p>
+            <p class="full-description">When I’m not coding, you’ll likely find me exploring design trends, attending tech meetups, or working on personal projects to sharpen my skills.I’m currently learning Python, which has broadened my understanding of programming and problem-solving. Along with Python, I am actively improving my skills in Data Structures and Algorithms (DSA) to strengthen my programming logic and optimize my coding solutions.</p>
+            <a href="#" class="btn" id="toggle-content">Read more</a>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">My <span>Skills</span></h2>
+    
+        <div class="services-container">
+            <div class="services-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web <span>Developer</span></h3>
+                <p>"As a passionate web developer, I specialize in creating responsive, user-friendly websites. I focus on building clean, efficient code while ensuring an exceptional user experience across all devices."</p>
+                <a href="#" class="btn">Read More</a>
+                <div class="popup-overlay">
+                    <div class="popup-content">
+                        <p>"My journey as a web developer has been driven by a passion for solving problems and bringing ideas to life through code. I have experience in front-end development using HTML, CSS, JavaScript, and frameworks like React, I'm always learning new technologies and keeping up with industry trends to improve my skill set.</p>
+                        <button class="close-btn">Close</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="services-box">
+                <i class="fa-solid fa-square-binary"></i>
+                <h3>Programming <span>Language</span></h3>
+                <p>"As a programmer, I have gained proficiency in Python, which has greatly expanded my understanding of programming concepts and problem-solving.</p>
+                <a href="#" class="btn">Read More</a>
+                <div class="popup-overlay">
+                    <div class="popup-content">
+                        <p>"My programming journey began with learning Python, which provided a solid foundation in coding logic and versatility across various domains like web development, data analysis, and automation. I'm now focusing on mastering Data Structures and Algorithms (DSA), which are essential to improve and keep learning day by day.</p>
+                        <button class="close-btn">Close</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="services-box">
+                <i class="fa-solid fa-bookmark"></i>
+                <h3>Research and <span>Team work</span></h3>
+                <p>"Collaborating in a research team has taught me the importance of teamwork, communication, and collective problem-solving. By working together, we can tackle complex challenges more effectively and innovate faster."</p>
+                <a href="#" class="btn">Read More</a>
+                <div class="popup-overlay">
+                    <div class="popup-content">
+                        <p>"Being part of a research team has significantly enhanced my understanding of collaborative problem-solving. It requires clear communication, an open exchange of ideas, and the ability to work towards common goals. Throughout various projects, I've learned how different team members bring unique skills to the table.</p>
+                        <button class="close-btn">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+    
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <video loop muted autoplay>
+                    <source src="Videos/video1.mp4" type="video/mp4"> 
+                </video>
+                <div class="portfolio-layer">
+                    <h4>Arthimetic <span>Calculator</span></h4>
+                    <p>"I built an interactive arithmetic calculator using HTML, CSS, and JavaScript. The calculator supports basic mathematical operations like addition, subtraction, multiplication, and division."</p>
+                    <a href="https://arthimetic.netlify.app/" target="blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+    
+            <div class="portfolio-box">
+                <video loop muted autoplay>
+                    <source src="Videos/videos2.mp4" type="video/mp4">
+                </video>
+                <div class="portfolio-layer">
+                    <h4><span>Tic</span> Tac <span>Toe</span></h4>
+                    <p>"I developed a classic Tic-Tac-Toe game using HTML, CSS, and JavaScript. The game features a responsive 3x3 grid, where users can play against each other, alternating between 'X' and 'O'."</p>
+                    <a href="https://vocal-cendol-b19f1d.netlify.app/" target="blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+    
+            <div class="portfolio-box">
+                <video loop muted autoplay>
+                    <source src="Videos/videos3.mp4" type="video/mp4">
+                </video>
+                <div class="portfolio-layer">
+                    <h4><span>Real</span> Time <span>Clock</span></h4>
+                    <p>"I developed a real-time live clock using HTML, CSS, and JavaScript. The clock displays the current time in hours, minutes, and seconds, updating every second."</p>
+                    <a href="https://bitfus.netlify.app/" target="blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+    
+            <div class="portfolio-box">
+                <video loop muted autoplay>
+                    <source src="Videos/videos4.mp4" type="video/mp4">
+                </video>
+                <div class="portfolio-layer">
+                    <h4>JS <span>Stopwatch</span></h4>
+                    <p>"I created a simple stopwatch using HTML, CSS, and JavaScript. It allows users to start, stop, and reset the timer with a click of a button. The timer tracks hours, minutes, and seconds, and the design is responsive and interactive."</p>
+                    <a href="https://illustrious-cheesecake-5084db.netlify.app/" target="blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+                <div class="portfolio-box">
+                <video loop muted autoplay>
+                    <source src="Videos/videos5.mp4" type="video/mp4">
+                </video>
+                <div class="portfolio-layer">
+                    <h4>Cyber <span>folio</span></h4>
+                    <p>"I created a sleek, futuristic cyber-style portfolio using only HTML and CSS. It showcases my skills, projects, and experiences in a visually striking design with a modern, tech-inspired aesthetic."</p>
+                    <a href="https://thunderous-kelpie-3b9af0.netlify.app/" target="blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form class="contact-id" action="https://formspree.io/account" method="POST">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subjects">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+
+        <div id="success-message" style="display:none; text-align:center; padding: 2rem; background-color:#1abc9c; color:white;">
+            <h3>Thank you for reaching out!</h3>
+            <p>We'll get back to you as soon as possible.</p>
+        </div>
+    </section>
+
+        <footer>
+        <div class="footer-iconTop">
+            <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+        </div>
+
+        <div class="foot">
+            <h1><i class="fa-solid fa-phone"></i>#91 7307597720</h1>
+            <h3><i class="mailto:yash.raghubasnhi2024@nst.rishihoodedu.edu.in.com"></i>yash.raghubanshi2024@nst.rishihood.edu.in</h3>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
