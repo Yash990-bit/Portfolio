@@ -1,7 +1,5 @@
 # Portfolio
 
-# Portfolio
-
 This project demonstrates an interactive website with smooth scrolling, toggleable content, popups for services, a contact form, and a mobile-friendly navigation menu. It uses HTML, CSS, and JavaScript to enhance user experience.
 
 # Features
