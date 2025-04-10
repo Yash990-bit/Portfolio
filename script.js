@@ -73,27 +73,29 @@ closeButtons.forEach(button => {
     });
 });
 
-const form = document.getElementById('contact-form');
+const form = document.querySelector('.contact-id');
 const successMessage = document.getElementById('success-message');
 
-form.addEventListener('submit', function (e) {
-    e.preventDefault(); 
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        const formData = new FormData(form);
 
-    const nameInput = form.querySelector('input[name="name"]');
-    const emailInput = form.querySelector('input[name="email"]');
-    const messageInput = form.querySelector('textarea');
-
-    if (!nameInput.value || !emailInput.value || !messageInput.value) {
-        alert("Please fill in all required fields!");
-        return;
-    }
-
-    form.reset();
-    successMessage.style.display = "block";
-    setTimeout(() => {
-        successMessage.style.display = "none";
-    }, 5000);
-});
+        fetch(form.action, {
+            method: 'POST',
+            body: formData,
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                successMessage.style.display = 'block';
+                form.reset();
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+        });
+    });
 
 const menuIcon = document.getElementById('menu-icon');
 const navbar = document.querySelector('.navbar');

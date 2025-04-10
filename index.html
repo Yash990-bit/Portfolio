@@ -173,25 +173,27 @@
             </div>
         </div>
     </section>
-    
-    
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me</span></h2>
-
-        <form class="contact-id" action="https://formspree.io/account" method="POST">
+    
+        <form class="contact-id" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="3c8bd682-8a6c-4d1c-82a2-50bb5ce8cccf">
+    
             <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email Address">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
             </div>
-
+    
             <div class="input-box">
-                <input type="number" placeholder="Mobile Number">
-                <input type="text" placeholder="Email Subjects">
+                <input type="number" name="mobile_number" placeholder="Mobile Number" required>
+                <input type="text" name="subject" placeholder="Email Subjects" required>
             </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+    
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+    
             <input type="submit" value="Send Message" class="btn">
         </form>
-
+    
         <div id="success-message" style="display:none; text-align:center; padding: 2rem; background-color:#1abc9c; color:white;">
             <h3>Thank you for reaching out!</h3>
             <p>We'll get back to you as soon as possible.</p>
